@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Получи 500 ₽ за карту Т-Банка</title>
+    <style>
+        /* Общие сбросы и шрифты */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f7fa;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        /* Карточка лендинга */
+        .landing {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            padding: 40px 30px;
+        }
+
+        /* Заголовки */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        h1 span {
+            color: #ffdd2d; /* жёлтый оттенок как у Т-Банка */
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: 30px 0 15px 0;
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 20px 0 8px 0;
+        }
+
+        /* Кнопка */
+        .btn {
+            display: inline-block;
+            background: #ffdd2d;
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 1.3rem;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.1s;
+            box-shadow: 0 6px 0 #d4b800;
+            margin: 10px 0 15px 0;
+        }
+        .btn:hover {
+            background: #f5d000;
+            transform: translateY(-2px);
+        }
+        .btn:active {
+            transform: translateY(4px);
+            box-shadow: 0 2px 0 #d4b800;
+        }
+        .btn-center {
+            text-align: center;
+        }
+
+        /* Список преимуществ */
+        .benefits {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .benefit-item {
+            background: #f8faff;
+            padding: 15px 18px;
+            border-radius: 16px;
+            border-left: 5px solid #ffdd2d;
+        }
+        .benefit-item strong {
+            display: block;
+            font-size: 1.1rem;
+        }
+        .benefit-item span {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        /* Инструкция (шаги) */
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 15px 0 20px 0;
+        }
+        .step {
+            flex: 1 1 150px;
+            background: #f8faff;
+            padding: 18px;
+            border-radius: 16px;
+            text-align: center;
+        }
+        .step .num {
+            display: inline-block;
+            background: #ffdd2d;
+            color: #1a1a1a;
+            font-weight: 700;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 50%;
+            margin-bottom: 8px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 16px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item strong {
+            display: block;
+            font-size: 1.05rem;
+        }
+        .faq-item p {
+            margin-top: 4px;
+            color: #555;
+        }
+
+        /* Футер */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        /* Адаптив для телефонов */
+        @media (max-width: 600px) {
+            .landing { padding: 25px 18px; }
+            h1 { font-size: 1.8rem; }
+            .benefits { grid-template-columns: 1fr; }
+            .steps { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="landing">
+
+            <!-- БЛОК 1: Шапка -->
+            <h1>Получи <span>500 ₽</span> за заказ карты Т-Банка</h1>
+            <p class="subtitle">Оформи дебетовую карту по моей ссылке — и 500 рублей уже на твоём счете. Без подвохов, всё честно.</p>
+
+            <div class="btn-center">
+                <a href="ВАША_ССЫЛКА" class="btn">Забрать 500 ₽</a>
+            </div>
+
+            <!-- БЛОК 2: Преимущества -->
+            <h2>Почему стоит оформить карту</h2>
+            <div class="benefits">
+                <div class="benefit-item"><strong>Кешбэк до 15%</strong><span>Возвращаем деньги за покупки в любимых магазинах.</span></div>
+                <div class="benefit-item"><strong>Бесплатное обслуживание</strong><span>При тратах от 5000 ₽/мес или остатке от 30 000 ₽.</span></div>
+                <div class="benefit-item"><strong>Удобное приложение</strong><span>Всё управление картой в телефоне: блокировка, переводы, статистика.</span></div>
+                <div class="benefit-item"><strong>Мгновенный выпуск</strong><span>Карта приходит курьером за 1–2 дня или сразу в цифровом виде.</span></div>
+            </div>
+
+            <!-- БЛОК 3: Как получить -->
+            <h2>Как получить свой бонус?</h2>
+            <div class="steps">
+                <div class="step"><span class="num">1</span> Нажми кнопку «Забрать 500 ₽»</div>
+                <div class="step"><span class="num">2</span> Заполни заявку на карту (5 минут)</div>
+                <div class="step"><span class="num">3</span> Активируй карту — и 500 ₽ на счете</div>
+            </div>
+            <p style="font-size:0.9rem; color:#777;">* Акция для новых клиентов Т-Банка, которые не оформляли карту раньше.</p>
+
+            <!-- БЛОК 4: Условия (коротко) -->
+            <h2>Важно знать</h2>
+            <ul style="margin: 10px 0 20px 20px; color:#444;">
+                <li>Бонус получают только <strong>новые клиенты</strong> (первая карта Т-Банка).</li>
+                <li>Для зачисления нужно активировать карту (первая покупка или пополнение).</li>
+                <li>Бонус приходит в течение 5–7 дней после активации.</li>
+            </ul>
+
+            <!-- БЛОК 5: FAQ -->
+            <h2>Отвечаю на вопросы</h2>
+            <div class="faq-item">
+                <strong>Есть ли скрытые комиссии?</strong>
+                <p>Нет. Обслуживание бесплатно при соблюдении условий (траты от 5000 ₽/мес или остаток от 30 000 ₽). В противном случае — 99 ₽/мес, но вы всегда можете закрыть карту.</p>
+            </div>
+            <div class="faq-item">
+                <strong>А если я уже клиент Т-Банка?</strong>
+                <p>Бонус только для новых клиентов. Но вы можете порекомендовать карту друзьям — им тоже будет приятно!</p>
+            </div>
+            <div class="faq-item">
+                <strong>Как быстро придёт карта?</strong>
+                <p>Курьер доставит за 1–2 рабочих дня. В некоторых городах доступна цифровая карта сразу в приложении.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Безопасно ли переходить по ссылке?</strong>
+                <p>Да, это официальная реферальная ссылка Т-Банка, все данные защищены.</p>
+            </div>
+
+            <!-- БЛОК 6: Повторный призыв -->
+            <div style="text-align:center; margin: 30px 0 10px 0;">
+                <p style="font-size:1.3rem; font-weight:600;">Не упусти шанс — 500 рублей ждут тебя!</p>
+                <a href="ВАША_ССЫЛКА" class="btn">Забрать 500 ₽</a>
+            </div>
+
+        </div>
+        <div class="footer">
+            Сделано вручную · 2026
+        </div>
+    </div>
+</body>
+</html>
